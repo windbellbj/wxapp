@@ -1,0 +1,28 @@
+
+<!-- <import src="template.wxml"> -->
+<!-- <template is="item" data="text:'import test'"></template> -->
+<!--pages/databind/databind.wxml-->
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="content">
+    <text>{{content}}</text>
+  </view>
+  <view class="content" hidden='{{flag}}'>
+    <text>{{hiddencontent}}</text>
+  </view>
+   <view class="content">
+    <text>{{num1}}+{{num2}}={{num1+num2}}</text>
+  </view>
+  <view class="content">
+    <text>{{"hello " + user.name}}</text>
+  </view>
+  <view class="content" wx:if="{{condition}}">
+    True
+  </view>
+  <view wx:if="{{length > 4}}">1</view>
+  <view wx:elif="{{length >2}}">2</view>
+  <view wx:else>3</view>
+  <view class="content" wx:for="{{users}}" wx:for-index="idx" wx:for-item="user">
+    <text>{{idx}}-{{user.name}}-{{user.age}}</text>
+  </view>
+  <view class="content" data-org='test' id="tapTest" bindtap='tapName'>Click me</view>
+</view>

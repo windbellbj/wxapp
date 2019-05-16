@@ -1,12 +1,16 @@
 {
-  "pages":[
+  "pages": [
+    "pages/calc/calc",
+    "pages/button/button",
+    "pages/template/template",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/databind/databind"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
